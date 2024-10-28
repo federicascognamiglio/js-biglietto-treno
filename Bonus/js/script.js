@@ -21,15 +21,15 @@ if ((isNaN(tripKm)) || (isNaN(passengerAge))) {
 
     if (ageNum < 18) {
         result = ticketPrice - (ticketPrice * 20 / 100);
-        console.log(result);
+       
     } else if (ageNum > 65) {
         result = ticketPrice - (ticketPrice * 40 / 100);
-        console.log(result);
     } else {
         result = ticketPrice
-        console.log(result);
     }
 }
+
+console.log(result);
 
 const finalResult = result.toFixed(2);
 console.log(finalResult);
